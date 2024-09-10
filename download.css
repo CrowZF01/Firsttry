@@ -1,0 +1,63 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background-image {
+    background-image: url('cat2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative; /* Ensures child elements can be positioned absolutely */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+}
+.background-image img {
+    width: 300px;
+    height: auto;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease forwards;
+}
+.like {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 2s; /* Appears 2 seconds after the image */
+}
+
+a {
+    font-size: 30px;
+    outline-color: black;
+    text-decoration: aquamarine;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    opacity: 0; /* Initially hidden */
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 3s; /* Appears 4 seconds after the image */
+}
+
+#Mauu {
+    color: rgb(193, 42, 178);
+    background: rgb(255, 255, 255);
+    margin-bottom: 100px;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 3.5s;
+}
+
+ /* Keyframes for fade-in animation */
+ @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
