@@ -16,7 +16,7 @@
     flex-direction: column; /* Stack items vertically */
 }
 .background-image img {
-    width: 300px;
+    width: 480px;
     height: auto;
     opacity: 0; /* Initially hidden */
     animation: fadeIn 2s ease forwards;
@@ -24,6 +24,7 @@
 .like {
     color: white;
     margin-top: 20px;
+    font-size: 45px;
     text-align: center;
     opacity: 0; /* Initially hidden */
     animation: fadeIn 2s ease forwards;
@@ -31,7 +32,7 @@
 }
 
 a {
-    font-size: 30px;
+    font-size: 60px;
     outline-color: black;
     text-decoration: aquamarine;
     padding: 5px 10px;
@@ -61,3 +62,4 @@ a {
         opacity: 1;
     }
 }
+
